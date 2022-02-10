@@ -1,6 +1,6 @@
-FROM ubuntu:16.04
+FROM arm64v8/ubuntu:16.04
 
-MAINTAINER Lilia Sfaxi <liliasfaxi@gmail.com>
+LABEL maintainer="Lilia Sfaxi <liliasfaxi@gmail.com>" 
 
 WORKDIR /root
 
@@ -37,7 +37,7 @@ RUN wget https://mohetn-my.sharepoint.com/:t:/g/personal/lilia_sfaxi_insat_u-car
 
 
 # set environment variables
-ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 
+ENV JAVA_HOME=/usr/lib/jvm/java-8-openjdk-arm64 
 ENV HADOOP_HOME=/usr/local/hadoop 
 ENV SPARK_HOME=/usr/local/spark
 ENV KAFKA_HOME=/usr/local/kafka
