@@ -1,4 +1,5 @@
 ## Présentation
+(Compatible avec l'architecture arm64 - M1 chips)
 
 Ces contenaires ont été initialement issus de https://github.com/kiwenlau/hadoop-cluster-docker
 
