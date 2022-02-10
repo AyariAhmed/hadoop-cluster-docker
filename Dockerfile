@@ -69,7 +69,8 @@ RUN mv /tmp/ssh_config ~/.ssh/config && \
     mv /tmp/run-wordcount.sh ~/run-wordcount.sh && \
     mv /tmp/spark-defaults.conf $SPARK_HOME/conf/spark-defaults.conf && \
     mv /tmp/hbase-env.sh $HBASE_HOME/conf/hbase-env.sh && \
-    mv /tmp/hbase-site.xml $HBASE_HOME/conf/hbase-site.xml
+    mv /tmp/hbase-site.xml $HBASE_HOME/conf/hbase-site.xml \
+    echo ${JAVA_HOME} >>/etc/environment
 
 RUN chmod +x ~/start-hadoop.sh && \
     chmod +x ~/start-kafka-zookeeper.sh && \
